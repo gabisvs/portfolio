@@ -1,12 +1,5 @@
 <!DOCTYPE html>
-<!-- Definição: Declaração do tipo de documento.
-Função: Informa ao navegador que o documento é escrito em HTML5, a versão mais recente do HTML. Isso garante que o navegador renderize o conteúdo corretamente usando o padrão atual. -->
-
-
 <html lang="pt-br">
-<!-- Definição: A tag <html> é a raiz de qualquer documento HTML.
-Função: Tudo o que está dentro desta tag faz parte do documento HTML.
-Atributo lang: Define o idioma principal do conteúdo do documento. pt-br indica que o conteúdo está em português do Brasil. Isso melhora a acessibilidade e a indexação por mecanismos de busca, além de auxiliar leitores de tela. -->
 
 <head>
     <meta charset="UTF-8">
@@ -14,141 +7,85 @@ Atributo lang: Define o idioma principal do conteúdo do documento. pt-br indica
     <meta name="description" content="Projeto Portfólio">
     <meta name="author" content="Generation Brasil">
     <meta name="keywords" content="HTML, CSS, JavaScript">
-    <link rel="icon" href="./assets/img/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="./assets/img/favicon.svg" />
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>Universe</title>
 </head>
-<!--Definição: Contém metadados sobre o documento, como informações sobre codificação de caracteres, título, links para arquivos de estilos e scripts.
-Função: Os metadados dentro de <head> não são exibidos diretamente na página, mas são essenciais para o funcionamento e a otimização do site.
-
-    <meta charset="UTF-8">:
-
-Definição: Define a codificação de caracteres do documento.
-Função: UTF-8 é uma codificação que suporta quase todos os caracteres e símbolos do mundo, garantindo que caracteres especiais, como acentos, sejam exibidos corretamente.
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">:
-Definição: Controla a escala e as dimensões da página na tela do dispositivo.
-Função: Configura a largura da viewport para corresponder à largura do dispositivo, tornando o layout adaptável e responsivo em dispositivos móveis.
-
-<meta name="description" content="Projeto Portfólio">:
-Definição: Fornece uma descrição breve e concisa do conteúdo da página.
-Função: Muito útil para SEO (otimização para motores de busca), pois essa descrição pode aparecer nos resultados de busca.
-
-<meta name="author" content="Generation Brasil">:
-Definição: Especifica o autor do documento.
-Função: Fornece informações sobre quem criou ou é responsável pelo conteúdo da página.
-meta name="keywords" content="HTML, CSS, JavaScript">:
-Definição: Lista de palavras-chave relevantes ao conteúdo da página.
-Função: Antigamente era usada para SEO, mas hoje em dia sua importância diminuiu consideravelmente, pois motores de busca dão mais atenção ao conteúdo real da página.
-
-<link rel="icon" href="./assets/img/favicon.svg" />:
-Definição: Define o favicon, que é o pequeno ícone exibido na aba do navegador ao lado do título da página.
-Função: Um favicon ajuda na identificação rápida da página entre várias abas abertas no navegador.
-
-<title>Universe</title>:
-Definição: Define o título da página.
-Função: Este título é exibido na aba do navegador e nos resultados de busca, sendo um elemento importante para SEO.
-    -->
 
 <body>
-    <!--Definição: Contém todo o conteúdo visível da página web.
-Função: Tudo o que aparece dentro da tag <body> é renderizado pelo navegador e exibido para o usuário. -->
+    <!-- Cabeçalho da Página (header) -->
+    <header class="flex menu_container">
 
+        <!-- Div Conteudo do Cabeçalho -->
+        <div id="header_content" class="menu_content">
 
-    <header>
-        <div id="header_content">
+            <!-- Titulo do Cabeçalho -->
             <div id="titulo">
+
+                <!-- Hyperlink -->
                 <a href="#">Universe</a>
+
             </div>
-            <div id="menu">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#about">Sobre</a></li>
-                    <li><a href="#contact">Contate-me</a></li>
-                </ul>
+
+            <!-- Conteudo do Menu da Página (header) -->
+            <div id="menu" class="flex" >
+
+                <!-- Menu da Página (nav) -->
+                <nav>
+                    <!-- Marcadores não ordenados -->
+                    <ul class="flex menu_lista">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#about">Sobre</a></li>
+                        <li><a href="#contact">Contate-me</a></li>
+                    </ul>
                 </nav>
+
             </div>
         </div>
+
     </header>
-    <!--Definição: Tag semântica usada para definir o cabeçalho da página ou de uma seção.
-Função: Normalmente, contém elementos como logotipo, título da página e menus de navegação. Melhora a acessibilidade, pois ferramentas de leitura de tela reconhecem <header> como o cabeçalho do conteúdo.
 
-    <div>:
-Definição: Um contêiner genérico que agrupa elementos de bloco.
-Função: Muito utilizado para estruturar o layout da página. O atributo id fornece um identificador único, permitindo a aplicação de estilos ou scripts específicos a esse elemento.
-
-<a href="#">:
-Definição: Tag de âncora usada para criar links.
-Função: O atributo href="#" especifica o destino do link. Neste caso, o símbolo # faz o link apontar para o topo da página ou para uma âncora específica dentro dela.
-
-<nav>:
-Definição: Tag semântica usada para definir um bloco de navegação.
-Função: Agrupa links de navegação, como menus de site. Sua utilização melhora a acessibilidade, já que navegadores e leitores de tela identificam <nav> como uma área de navegação.
-
-    <ul>:
-Definição: Define uma lista não ordenada (com marcadores).
-Função: Agrupa itens de lista <li>, que podem ser links ou outros conteúdos.
-
-    <li>:
-Definição: Um item de uma lista.
-Função: Cada <li> representa um item na lista não ordenada <ul>. -->
-
-
+    <!-- Seção Principal da Página (main) -->
     <main>
-        <section id="home">
-            <article id="home_texto">
+
+        <!-- Seção Home -->
+        <section id="home" class="home_container">
+
+            <!-- Texto da Seção Home -->
+            <article id="home_texto" class="home_content">
+
                 <h4>Bem-vindo ao Novo Universo</h4>
                 <h1>Mundos diferentes para pessoas diferentes</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod error veniam in voluptatem magni
-                    quisquam</p>
-                <a target="_blank" href="https://github.com/conteudoGeneration" alt="Github da Generation Brasil">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod error veniam in voluptatem magni quisquam
+                </p>
+
+                <a
+                class="botao"
+                 target="_blank" href="https://github.com/conteudoGeneration" alt="Github da Generation Brasil">
+                    Explorar
+                </a>
+
             </article>
-            <article id="home_imagem">
-                <img src="./assets/img/astronauta.svg" alt="Capacete de Astronauta Animado" width="300">
+
+            <!-- Imagem da Seção Home -->
+            <article id="home_imagem" class="home_content">
+                <img class="home_content_img"
+                src="./assets/img/astronauta.svg" alt="Capacete de Astronauta Animado" width="450">
             </article>
+
         </section>
-        <!--Definição: Tag semântica que define o conteúdo principal da página.
-Função: Destina-se ao conteúdo central, que é diretamente relacionado ao propósito principal do documento. Melhora a acessibilidade ao destacar o conteúdo essencial para leitores de tela.
 
-<section>:
-Definição: Tag semântica usada para agrupar conteúdo tematicamente relacionado.
-Função: Ajuda a organizar o conteúdo em seções lógicas e coesas. Cada <section> deve idealmente ter um título próprio e pode conter uma variedade de elementos HTML.
+        <!-- Seção Sobre você -->
+        <section id="about" class="sobre_container">
 
-    <article>:
-Definição: Representa uma composição independente dentro de um documento.
-Função: Cada <article> pode ser lido de forma independente e pode incluir títulos, parágrafos, imagens, etc. Usado para conteúdos que fazem sentido por si só, como artigos de blog, notícias, etc.
+            <!-- Foto do Perfil do Github -->
+            <img src="assets/img/user_01.svg" alt="Foto do Perfil do Github" width="350px">
 
-    <h1>, <h4>:
-Definição: Tags de cabeçalho que definem os níveis de títulos.
-Função: <h1> é o título principal e mais importante da página ou seção. <h4> é um subtítulo de menor importância. A hierarquia dos cabeçalhos (<h1> a <h6>) deve ser mantida para garantir boa estrutura e acessibilidade.
-
-    <p>:
-Definição: Tag de parágrafo, usada para incluir textos em blocos.
-Função: Agrupa texto dentro de um bloco. É a maneira mais comum de exibir texto corrido.
-
-<img src="" alt="" width="">:
-Definição: Tag de imagem.
-Função: Exibe uma imagem no documento.
-Atributos:
-src: Especifica o caminho para a imagem.
-alt: Texto alternativo que é exibido se a imagem não carregar. Também é lido por leitores de tela para descrever a imagem para pessoas com deficiência visual.
-width: Define a largura da imagem em pixels.
-
-<a target="_blank" href="https://github.com/conteudoGeneration" alt="Github da Generation Brasil">:
-Definição: Um link que aponta para uma URL externa.
-Função:
-O atributo target="_blank" faz com que o link seja aberto em uma nova aba.
-href é o destino do link.
-alt fornece um texto alternativo para o link.  -->
-
-
-        <section id="about">
-
-            <img src="assets/img/user_01.svg" alt="Foto do Perfil do Github" width="450px">
-
-
+            <!-- Texto Sobre você -->
             <article id="sobre_texto">
 
-                <h1>Sobre mim</h1>
+                <h1> Sobre mim</h1>
 
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -157,9 +94,12 @@ alt fornece um texto alternativo para o link.  -->
                     Dolorum maiores magni deleniti modi sit laudantium totam!
                 </p>
 
-                <div id="sobre_github">
+                <!-- Informações do Github -->
+                <div id="sobre_github" class="flex sobre_github">
 
-                    <a target="_blank" href="https://github.com/conteudoGeneration">Github</a>
+                    <a 
+                    class="botao"
+                    target="_blank" href="https://github.com/conteudoGeneration">Github</a>
                     <p>200 Seguidores</p>
                     <p>100 Repositórios</p>
 
@@ -169,10 +109,10 @@ alt fornece um texto alternativo para o link.  -->
 
         </section>
 
-        <!--  -->
-
+        <!-- Seção Formulário de Contato e Redes Sociais -->
         <section id="contact">
 
+            <!-- Seção de Contato - Redes Sociais-->
             <article id="redes_sociais">
 
                 <h4>Contate-me</h4>
@@ -181,7 +121,6 @@ alt fornece um texto alternativo para o link.  -->
 
                 <div id="icones_redes_sociais">
                     <a href="">
-                        <img src="" alt="" width="">:
                         <img src="assets/img/linkedin.svg" alt="LinkedIn" />
                     </a>
                     <a href="">
@@ -193,65 +132,38 @@ alt fornece um texto alternativo para o link.  -->
                 </div>
 
             </article>
+
+            <!-- Seção do Formulário-->
             <form action="" method="POST">
 
-
                 <label for="name">Nome: </label>
-                <input id="name" type="text" name="name" placeholder="Digite seu nome">
+                <input id="name" type="text" name="name" placeholder="Digite seu nome" >
                 <span id="txtNome"></span>
 
                 <label for="email">E-mail: </label>
-                <input id="email" type="text" name="email" placeholder="Digite seu email">
+                <input id="email" type="text" name="email" placeholder="Digite seu email" >
                 <span id="txtEmail"></span>
-
+                
                 <label for="subject">Assunto: </label>
-                <input id="subject" type="text" name="subject" placeholder="Digite o título da message">
+                <input id="subject" type="text" name="subject" placeholder="Digite o título da messagem" >
                 <span id="txtSubject"></span>
 
                 <label for="message">Mensagem: </label>
-                <textarea id="message" name="message" placeholder="Digite sua message"></textarea>
+                <textarea id="message" name="message" placeholder="Digite sua messagem" ></textarea>
 
-                <button type="submit">Enviar</button>
+                <button type="submit">Enviar</button> 
+                <!-- <a href="sucess.html">Enviar</a> -->
+
             </form>
+
         </section>
-        <!-- Definição: Define uma seção específica dedicada ao contato e redes sociais.
-Função: Organiza o conteúdo relacionado ao contato em uma área distinta da página.
-
-<form action="" method="POST">:
-Definição: Tag usada para criar um formulário.
-Função:
-action: Especifica a URL para onde os dados do formulário serão enviados ao ser submetido.
-method: Define o método HTTP para envio dos dados, onde POST envia os dados de forma mais segura, em comparação com GET.
-
-<label for="">:
-Definição: Rótulo associado a um elemento de formulário, como uma caixa de texto.
-Função: O atributo for associa o rótulo a um elemento específico pelo seu id, facilitando a navegação para usuários de leitores de tela.
-
-<input id="" type="" name="" placeholder="">:
-Definição: Campo de entrada de dados para formulários.
-Função:
-type: Define o tipo de entrada (texto, e-mail, etc.).
-id: Identificador único para o campo.
-name: Nome do campo, que será usado na submissão dos dados.
-placeholder: Texto de preenchimento que aparece dentro do campo antes de o usuário começar a digitar.
-
-<textarea id="" name="" placeholder="">:
-Definição: Área de texto para entradas de múltiplas linhas.
-Função: Usada para capturar mensagens ou comentários mais longos.
-
-<button type="submit">Enviar</button>:
-Definição: Botão usado para enviar o formulário.
-Função: Ao ser clicado, o formulário é enviado para o destino especificado no atributo action. -->
-
 
     </main>
 
-    <!-- O elemento <footer> representa um rodapé de um documento, como a área presente no final de uma página web.
-Normalmente é utilizado para descrever informações de autoria, como nome, contato do autor e data de criação. -->
+    <!-- Rodapé da Página (footer) -->
     <footer>
-        <p>Feito com 💙 por Generation Brasil - 2024 </p>
-   </footer>
-
+        Feito com 💙 por Generation Brasil - 2024
+    </footer>
 
 </body>
 
