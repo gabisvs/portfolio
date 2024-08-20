@@ -257,33 +257,50 @@ margin-left: 30px;: Adiciona margem à esquerda do texto, afastando-o de outros 
 
 /* Estilização da Seção Contato */
 
-.contato_container{
+.contato_container {
     max-width: 1120px;
-    margin: auto;
-    height: 100vh;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, 540px);
-    align-items: center;
-    gap: 30px
-
+    margin: 64px auto 32px;
+    padding: 0 32px;
+    display: grid;              
+    grid-template-columns: repeat(auto-fill, 518px);
+    justify-content: center;    
+    align-items: center;       
+    gap: 20px;  
 }
 
-.contato_content{
-    gap: 30px;
+.contato_container h4 {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 16px 0;
+}
+
+.contato_content {
+    display: flex;
     flex-direction: column;
-    margin: 64px 0 0 0; 
+    justify-content: center; 
+    align-items: center;     
+
+    margin: 64px 0 0 0;
     font-size: 20px;
 }
 
-h4{
-    font-size: 30px;
-    font-weight: bold;
+.contato_content p {
+    display: block;
+    text-align: justify;
 }
 
 /* Estilização da Seção Redes Sociais */
 
-.social_container a img{
-    width: 70px;
+.social_container {
+    display: flex;
+    justify-content: space-evenly; 
+    margin: 32px 0 0 0;
+    width: 320px;
+}
+
+.social_icon {
+    width: 75px;
+    height: 75px;
 }
 
 .social_icon:hover{
@@ -319,6 +336,14 @@ form input, textarea{
     border: none;
     font-weight: bold;
 
+}
+
+form span{
+    margin-bottom: 8px;
+    margin-left: 12px;
+    font-size: 12px;
+    line-height: 16px;
+    color: red;
 }
 
 form button{

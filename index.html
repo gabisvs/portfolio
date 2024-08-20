@@ -28,7 +28,7 @@
             </div>
 
             <!-- Conteudo do Menu da Página (header) -->
-            <div id="menu" class="flex" >
+            <div id="menu" class="flex">
 
                 <!-- Menu da Página (nav) -->
                 <nav>
@@ -57,12 +57,12 @@
                 <h4>Bem-vindo ao Novo Universo</h4>
                 <h1>Mundos diferentes para pessoas diferentes</h1>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod error veniam in voluptatem magni quisquam
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod error veniam in voluptatem magni
+                    quisquam
                 </p>
 
-                <a
-                class="botao"
-                 target="_blank" href="https://github.com/conteudoGeneration" alt="Github da Generation Brasil">
+                <a class="botao" target="_blank" href="https://github.com/conteudoGeneration"
+                    alt="Github da Generation Brasil">
                     Explorar
                 </a>
 
@@ -70,42 +70,14 @@
 
             <!-- Imagem da Seção Home -->
             <article id="home_imagem" class="home_content">
-                <img class="home_content_img"
-                src="./assets/img/astronauta.svg" alt="Capacete de Astronauta Animado" width="450">
+                <img class="home_content_img" src="./assets/img/astronauta.svg" alt="Capacete de Astronauta Animado"
+                    width="450">
             </article>
 
         </section>
 
         <!-- Seção Sobre você -->
         <section id="about" class="sobre_container">
-
-            <!-- Foto do Perfil do Github -->
-            <img src="assets/img/user_01.svg" alt="Foto do Perfil do Github" width="350px">
-
-            <!-- Texto Sobre você -->
-            <article id="sobre_texto">
-
-                <h1> Sobre mim</h1>
-
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Quibusdam odit voluptates incidunt inventore rem error harum
-                    blanditiis accusamus vitae, minus fugit consequatur?
-                    Dolorum maiores magni deleniti modi sit laudantium totam!
-                </p>
-
-                <!-- Informações do Github -->
-                <div id="sobre_github" class="flex sobre_github">
-
-                    <a 
-                    class="botao"
-                    target="_blank" href="https://github.com/conteudoGeneration">Github</a>
-                    <p>200 Seguidores</p>
-                    <p>100 Repositórios</p>
-
-                </div>
-
-            </article>
 
         </section>
 
@@ -134,24 +106,27 @@
             </article>
 
             <!-- Seção do Formulário-->
-            <form action="" method="POST">
+            <form id="formulario" action="https://formsubmit.co/0598ad2eeaae72d6efc52084ba112818" method="POST">
 
+                <input type="hidden" name="_next" value="http://localhost:5500/sucess.html">
+                <input type="hidden" name="_captcha" value="false">
+ 
                 <label for="name">Nome: </label>
-                <input id="name" type="text" name="name" placeholder="Digite seu nome" >
+                <input id="name" type="text" name="name" placeholder="Digite seu nome">
                 <span id="txtNome"></span>
 
                 <label for="email">E-mail: </label>
-                <input id="email" type="text" name="email" placeholder="Digite seu email" >
+                <input id="email" type="text" name="email" placeholder="Digite seu e-mail">
                 <span id="txtEmail"></span>
-                
+
                 <label for="subject">Assunto: </label>
-                <input id="subject" type="text" name="subject" placeholder="Digite o título da messagem" >
+                <input id="subject" type="text" name="subject" placeholder="Digite o título da messagem">
                 <span id="txtSubject"></span>
 
                 <label for="message">Mensagem: </label>
-                <textarea id="message" name="message" placeholder="Digite sua messagem" ></textarea>
+                <textarea id="message" name="message" placeholder="Digite sua messagem"></textarea>
 
-                <button class="botao" type="submit">Enviar</button> 
+                <button class="botao" type="submit">Enviar</button>
                 <!-- <a href="sucess.html">Enviar</a> -->
 
             </form>
@@ -164,6 +139,8 @@
     <footer class="flex footer_container">
         Feito com 💙 por Generation Brasil - 2024
     </footer>
+
+    <script src="assets/js/script.js"> </script>
 
 </body>
 
